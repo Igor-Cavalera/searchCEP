@@ -9,10 +9,12 @@
 }
 
 .title {
+    font-family: 'Courier New', Courier, monospace;
     font-size: 85px;
     color: #FFF;
-    animation: flipTitle 1s;
 }
+
+/* 
 
 @keyframes flipTitle {
     from {
@@ -22,6 +24,8 @@
         transform: rotateX(0deg);
     }
 }
+
+*/ 
 
 .containerInput {
     background-color: rgba(255, 255, 255, 0,2);
@@ -39,6 +43,7 @@
     color: #FFF;
     outline: none;
     margin-right: 8px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .containerInput input::placeholder{
@@ -70,12 +75,14 @@
 }
 
 .main h2 {
+    font-family: 'Courier New', Courier, monospace;
     margin: 16px 0;
     font-size: 39px;
 }
 
 .main span {
-    margin-bottom: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 

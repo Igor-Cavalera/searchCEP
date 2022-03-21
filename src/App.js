@@ -44,13 +44,13 @@ function App() {
         </button>
       </div>
 
-      {Object.keys(cep).length > 0 && (
+      {Object.keys(cep).length > 1 && (
         <main className="main">
           <h2>CEP: {cep.cep}</h2>
 
           <span>{cep.logradouro}</span>
-          <span>Complemento: {cep.complemento}</span>
-          <span>{cep.bairro}</span>
+          <span>Complemento  - {cep.complemento}</span>
+          <span>Bairro - {cep.bairro}</span>
           <span>{cep.localidade} - {cep.uf}</span>
 
         </main>
