@@ -1,6 +1,5 @@
-# Buscador de CEP - React 
+# Buscador CEP - React 
 ## APLICAÇÃO DESKTOP - Electron 
+<p> • Corrigir - Electron não inicia </p>
 
-![image](https://user-images.githubusercontent.com/66530386/159219987-0ad68046-695d-4f25-8dbb-384d7a59f3fb.png)
-
-
+![image](https://user-images.githubusercontent.com/66530386/165001040-4716060b-377e-43c0-b7a8-c3f6c294c1c6.png)
