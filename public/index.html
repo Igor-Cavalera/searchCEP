@@ -6,7 +6,25 @@
     <title>Buscador CEP</title>
   </head>
   <body>
+    <!--
+      &minus; = minimize icon
+      &#10006; = close icon
+      &#x23630; = menu icon
+    -->
+
+    <nav>
+      <div class="left-nav">
+        <span class="nav-link">&#x2630;</span>
+      </div>
+      <div class="right-nav">
+        <span class="nav-link" id="minimize">&minus;</span>
+        <span class="nav-link" id="close-app">&#10006;</span>
+      </div>
+
+    </nav>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
+    <script src="/src/js/window.js" defer type="module"></script>
   </body>
 </html>
