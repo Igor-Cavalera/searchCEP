@@ -1,11 +1,10 @@
-import Resultado  from './components/Resultado'
 import { useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import './styles/style.css';
 
 import api from './services/api';
 
-function App(props) {
+function App() {
 
   const [input, setInput] = useState('')
   const [cep, setCep] = useState({});
@@ -43,9 +42,17 @@ function App(props) {
           <FiSearch size={25} color="#FFF"/>
         </button>
       </div>
-
+    
       {Object.keys(cep).length > 1 && (
-       <Resultado/>
+        <main className="main">
+          <h2>CEP: {cep.cep}</h2>
+
+          <span>{cep.logradouro}</span>
+          <span>Complemento  - {cep.complemento}</span>
+          <span>Bairro - {cep.bairro}</span>
+          <span>{cep.localidade} - {cep.uf}</span>
+
+        </main>
       )}
     </div>
   );
