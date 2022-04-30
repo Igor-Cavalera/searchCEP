@@ -3,6 +3,7 @@ import { FiSearch } from 'react-icons/fi';
 import './styles/style.css';
 
 import api from './services/api';
+import Nav from './components/Nav';
 
 function App() {
 
@@ -27,34 +28,37 @@ function App() {
   }
 
   return (
-    <div className="container">
-      <h1 className="title">Buscador CEP</h1>
-    
-      <div className="containerInput">
-        <input 
-          type="text" 
-          placeholder="Digite o CEP"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-        />
+    <>
+      <Nav/>
+      <div className="container">
+        <h1 className="title">Buscador CEP</h1>
+      
+        <div className="containerInput">
+          <input 
+            type="text" 
+            placeholder="Digite o CEP"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+          />
 
-        <button className="buttonSearch" onClick={handleSearch}>
-          <FiSearch size={25} color="#FFF"/>
-        </button>
+          <button className="buttonSearch" onClick={handleSearch}>
+            <FiSearch size={25} color="#FFF"/>
+          </button>
+        </div>
+      
+        {Object.keys(cep).length > 1 && (
+          <main className="main">
+            <h2>CEP: {cep.cep}</h2>
+
+            <span>{cep.logradouro}</span>
+            <span>Complemento  - {cep.complemento}</span>
+            <span>Bairro - {cep.bairro}</span>
+            <span>{cep.localidade} - {cep.uf}</span>
+
+          </main>
+        )}
       </div>
-    
-      {Object.keys(cep).length > 1 && (
-        <main className="main">
-          <h2>CEP: {cep.cep}</h2>
-
-          <span>{cep.logradouro}</span>
-          <span>Complemento  - {cep.complemento}</span>
-          <span>Bairro - {cep.bairro}</span>
-          <span>{cep.localidade} - {cep.uf}</span>
-
-        </main>
-      )}
-    </div>
+    </>
   );
 }
 
