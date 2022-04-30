@@ -1,10 +1,10 @@
 const { ipcRenderer, contextBridge } = require ("electron");
 
-const janela = {
+const Test = {
     window: {
         close: () => ipcRenderer.send("app/close"),
         minimize: () => ipcRenderer.send("app/minimize")
     }
 }
 
-contextBridge.exposeInMainWorld("app", janela)
+contextBridge.exposeInMainWorld("app", Test);

@@ -10,7 +10,7 @@ function createWindow () {
       preload: path.join(__dirname, 'preload.js')
     },
     autoHideMenuBar: true,
-    frame: false
+    frame: false,
   })
 
   mainWindow.loadURL('http://localhost:3000')
