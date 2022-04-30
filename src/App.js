@@ -49,11 +49,13 @@ function App() {
           <main className="main">
             <h2>CEP: {cep.cep}</h2>
 
-            <span>{cep.logradouro}</span>
-            <span>Complemento  - {cep.complemento}</span>
-            <span>Bairro - {cep.bairro}</span>
-            <span>{cep.localidade} - {cep.uf}</span>
-
+            <p>
+              <span className="logradouro">{cep.logradouro},</span>
+              <span className="complemento">Complemento: {cep.complemento}<br/></span>
+              <span className="bairro">Bairro: {cep.bairro},</span>
+              <span className="localidade">{cep.localidade} - {cep.uf} </span>
+              <span className="ddd"> DDD:({cep.ddd})</span>
+            </p>
           </main>
         )}
       </div>
