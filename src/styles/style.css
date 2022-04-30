@@ -91,16 +91,53 @@ nav {
 
 .main h2 {
     font-family: 'Courier New', Courier, monospace;
-    margin: 16px 0;
+    margin-top: 10px;
     font-size: 39px;
+}
+
+.main p {
+    margin-left: 10px;
 }
 
 .main span {
     font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-weight: bold;
 }
 
+.logradouro {
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.complemento {
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.bairro {
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.localidade {
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.ddd {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 5px;
+    font-weight: bold;
+}
 @media (max-width: 620px){
     .title{
         font-size: 60px;
