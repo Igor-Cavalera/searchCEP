@@ -1,3 +1,5 @@
+/*
+
 import { app } from "electron";
 
 const MINUS = document.getElementById("minimize");
@@ -13,3 +15,5 @@ function close_app() {
 function minimize() {
     app.window.minimize();
 }
+
+*/
