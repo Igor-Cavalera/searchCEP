@@ -1,4 +1,7 @@
 # Buscador CEP - React 
+
+``` npm run electron-react ``` 
+
 ## APLICAÇÃO DESKTOP - Electron 
 
 <p> • Customizar TitleBar </p>
